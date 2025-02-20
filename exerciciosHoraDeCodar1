@@ -1,0 +1,78 @@
+fun main (){
+    var nome_de_carro = "fusca"
+    println("O nome do carro é $nome_de_carro")
+    exer1()
+}
+fun exer1 (){
+    print("Informe seu nome: ")
+    val nome = readLine()
+    println("Olá, $nome")
+    exer2 ()
+}
+fun exer2 () {
+    print ("informe seu nome novamente: ")
+    val nome = readLine()
+    print ("agora informe sua idade manow: ")
+    val idade = readLine()?.toIntOrNull()?:0
+    println ("oi manin $nome, sua idade é $idade")
+    exer3 ()
+}
+fun exer3 () {
+    print("Vamos calcular a base de um Retangulo! Informe a base: ")
+    val base1 = readLine()?.toIntOrNull()?:0
+    print ("Agora informe a altura: ")
+    val altura1 = readLine()?.toIntOrNull()?:0
+    val r_area = base1 * altura1
+    println ("A área é $r_area")
+    exer4 ()
+}
+
+fun exer4 () {
+    print ("Agora, vamos calcular área de um quadrado, informe a medida do lado: ")
+    val ladoQuadrado = readLine()?.toIntOrNull()?:0
+    val area_q = ladoQuadrado * ladoQuadrado
+    println ("A área do quadrado é $area_q")
+    exer5 ()
+}
+
+fun exer5 () {
+    print ("agora, para calcularmos a área de um losango, precisamos que informe a diagonal maior: ")
+    val dm = readLine()?.toIntOrNull()?:0
+    print ("prosseguindo, agora informe a diagonal menor pra eu ver um negocio aqui: ")
+    val dmn = readLine()?.toIntOrNull()?:0
+    val result = (dm * dmn) / 2.0
+    println ("A área do losango é $result ")
+    exer6 ()
+}
+fun exer6 () {
+    print("continuando, vamos calcular a área de um trapézio. informe a base maior primeiro: ")
+    val bm = readLine()?.toDoubleOrNull() ?: 0.0
+    print("informe a base menor: ")
+    val bmn = readLine()?.toDoubleOrNull() ?: 0.0
+    print("Informe a altura: ")
+    val h = readLine()?.toDoubleOrNull() ?: 0.0
+    val result1 = ((bm + bmn) * h)
+    println("A área do trapézio é $result1")
+    exer7()
+}
+fun exer7 () {
+    print("na reta final dos calculos, vamos (vamos nada, sou eu que to fazendo a parada dificil, humano) calcular a área do paralelogramo, informe a base: ")
+    val base_p = readLine()?.toIntOrNull()?:0
+    print("Anda logo e fala a altura: ")
+    val altura_p = readLine()?.toIntOrNull()?:0
+    val result2 = base_p * altura_p
+    println ("A área é $result2")
+    exer8 ()
+}
+fun exer8 () {
+    print ("agora calcular a área de um triangulo, informe a base: ")
+    val base_t = readLine()?.toIntOrNull()?:0
+    print ("informe a altura: ")
+    val altura_t = readLine()?.toIntOrNull()?:0
+    val result3 = (base_t * altura_t) / 2
+    println ("A área é $result3")
+    end()
+}
+fun end () {
+    print ("Vai me deixar em paz agora?")
+}
