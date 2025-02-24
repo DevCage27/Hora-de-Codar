@@ -71,8 +71,22 @@ fun exer8 () {
     val altura_t = readLine()?.toIntOrNull()?:0
     val result3 = (base_t * altura_t) / 2
     println ("A área é $result3")
-    end()
+    exer9 ()
 }
+
+fun exer9 () {
+    print("Digite o raio do círculo: ")
+    val raio = readLine()?.toDoubleOrNull()
+
+    if (raio != null && raio > 0) {
+        val area = Math.PI * raio * raio
+        println("A área do círculo é: %.2f".format(area))
+    } else {
+        println("Valor inválido. Insira um número positivo.")
+    }
+  end ()
+}
+
 fun end () {
     print ("Vai me deixar em paz agora?")
 }
